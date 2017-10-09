@@ -1,0 +1,241 @@
+/*Essa classe envolve tudo, definindo as definições de largura,
+e adiciona preenchimento para as bordas esquerdas e direitas.*/
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+/*Responsivo*/
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+/*Linhas(row)*/
+.row{
+    display: grid; /*Cria um container de grade*/
+    grid-template-columns: repeat(12, 1fr); 
+    /*Define a quantidade de colunas para grade. Nesse caso foi definido a notação de repetição para definir 12 colunas de tamanhos iguais.
+    ifr(uma fração do espaço diponivel no contênier da grade) referece a largura de coluna individual*/
+    grid-gap: 20px;/*Defini a quantidade de espaço entre as colunas e entre as linhas das colunas.*/
+}
+
+/*Responsivo*/
+
+/*Celular*/
+.celular-12-colunas{
+    grid-column: span 12;
+}
+
+.celular-11-colunas{
+    grid-column: span 11;
+}
+
+.celular-10-colunas{
+    grid-column: span 10
+}
+  
+.celular-9-colunas{
+    grid-column: span 9
+}
+  
+.celular-8-colunas{
+    grid-column: span 8
+}
+  
+.celular-7-colunas{
+    grid-column: span 7
+}
+  
+.celular-6-colunas{
+    grid-column: span 6
+}
+  
+.celular-5-colunas{
+    grid-column: span 5
+}
+  
+.celular-4-colunas{
+    grid-column: span 4
+}
+  
+.celular-3-colunas{
+    grid-column: span 3
+}
+  
+.celular-2-colunas{
+    grid-column: span 2
+}
+  
+.celular-1-colunas{
+    grid-column: span 1
+}
+
+/*tablet*/
+@media (min-width: 768px){
+    .tablet-12-colunas {
+      grid-column: span 12
+    }
+  
+    .tablet-11-colunas{
+      grid-column: span 11;
+    }
+  
+    .tablet-10-colunas{
+      grid-column: span 10
+    }
+  
+    .tablet-9-colunas{
+      grid-column: span 9
+    }
+  
+    .tablet-8-colunas{
+      grid-column: span 8
+    }
+  
+    .tablet-7-colunas{
+      grid-column: span 7
+    }
+  
+    .tablet-6-colunas{
+      grid-column: span 6
+    }
+  
+    .tablet-5-colunas{
+      grid-column: span 5
+    }
+  
+    .tablet-4-colunas{
+      grid-column: span 4
+    }
+  
+    .tablet-3-colunas{
+      grid-column: span 3
+    }
+  
+    .tablet-2-colunas{
+      grid-column: span 2
+    }
+  
+    .tablet-1-colunas{
+      grid-column: span 1
+    }
+}
+
+/*Desktop*/
+@media (min-width: 992px){
+    .desktop-12-colunas{
+        grid-column: span 12;
+    }
+    
+    .desktop-11-colunas{
+        grid-column: span 11;
+    }
+    
+    .desktop-10-colunas{
+        grid-column: span 10
+    }
+      
+    .desktop-9-colunas{
+        grid-column: span 9
+    }
+      
+    .desktop-8-colunas{
+        grid-column: span 8
+    }
+      
+    .desktop-7-colunas{
+        grid-column: span 7
+    }
+      
+    .desktop-6-colunas{
+        grid-column: span 6
+    }
+      
+    .desktop-5-colunas{
+        grid-column: span 5
+    }
+      
+    .desktop-4-colunas{
+        grid-column: span 4
+    }
+      
+    .desktop-3-colunas{
+        grid-column: span 3
+    }
+      
+    .desktop-2-colunas{
+        grid-column: span 2
+    }
+      
+    .desktop-1-colunas{
+        grid-column: span 1
+    }
+}
+
+/*Desktop Tela grande*/
+@media (min-width: 1200px) {
+    .telona-12 {
+      grid-column: span 12
+    }
+  
+    .telona-11-colunas {
+      grid-column: span 11;
+    }
+  
+    .telona-10-colunas {
+      grid-column: span 10
+    }
+  
+    .telona-9-colunas {
+      grid-column: span 9
+    }
+  
+    .telona-8-colunas {
+      grid-column: span 8
+    }
+  
+    .telona-7-colunas {
+      grid-column: span 7
+    }
+  
+    .telona-6-colunas {
+      grid-column: span 6
+    }
+  
+    .telona-5-colunas {
+      grid-column: span 5
+    }
+  
+    .telona-4-colunas {
+      grid-column: span 4
+    }
+  
+    .telona-3-colunas {
+      grid-column: span 3
+    }
+  
+    .telona-2-colunas {
+      grid-column: span 2
+    }
+  
+    .telona-1-colunas {
+      grid-column: span 1
+    }
+  }
+  
