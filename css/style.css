@@ -81,7 +81,7 @@ header{
 		flex-direction: column;
 		justify-content: center;
 		width: 100%;
-		background-color: rgba(33,33,33, .1);
+		background-color: rgba(231, 231, 231,.9);
 		height: 0px;
 		transition: all 0.3s;
 		overflow: hidden;
