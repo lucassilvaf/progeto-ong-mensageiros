@@ -1,0 +1,47 @@
+.img_logo{
+	width: 27%;
+}
+
+.img-negocios{
+	width: 250px;
+	height: 250px;
+}
+
+.img-padrao{
+	border-radius: 125px;
+	width: 125px;
+	height: 125px;
+}
+
+.img-parceiros{
+	width: 10%;
+}
+
+.img-depoimentos{
+	
+}
+
+
+
+
+@media (max-width: 576px) {
+	.img-padrao{
+		border-radius: 125px;
+		width: 150px;
+		height: 150px;
+	}
+	.img_logo{
+		width: 48px;
+	}
+	.img-parceiros{
+		width: 15%;
+
+	}
+	.img-sociais{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.img-sociais a{
+		padding: 15px;
+	}
+}

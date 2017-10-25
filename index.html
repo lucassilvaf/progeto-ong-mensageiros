@@ -1,72 +1,404 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ONG Mensageiros</title>
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="stylesheet" type="text/css" href="css/banner.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>A Mensageiros</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/img.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
 </head>
 <body>
-    <header>
-        <nav class="container nav">
-            <a class="nav-logo" href="index.html">
-                <img src="img/logo_mde.png" alt="Logo ONG Mensageiros da Esperança">
-            </a>
-            <label class="nav-burguer" for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <input type="checkbox" id="nav-check">
-            <ul class="nav-link">
-               <li><a href="">Home</a></li>
-               <li><a href="">A Mensageiros</a></li>
-               <li><a href="">Negócios Sociais</a></li>
-               <li><a href="">Resultados</a></li>
-               <li><a href="">Parceiros</a></li>
-               <li><a href="">Doe</a></li>
-               <li><a href="">Contato</a></li>
-           </ul>
-       </nav>
+  <header>
+    <div class="header">
+      <nav class="menu">
+        <a class="logo" href="index.html">
+          <img src="imagens/logo_mde.png" alt="Logo ong mensageiros da esperança">
+        </a>
+        <label class="menu-toggle" for="checkbox">
+          <span></span>
+          <span></span> 
+          <span></span>
+        </label>
+        <input type="checkbox" id="checkbox">
+        <ul class="menu-link">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#sobre">A Mensageiros</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="#negocios-sociais">Negócios Sociais</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+          <li><a href="doe.html">Doe</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>    
+  </header>
+  
+  <main>
 
-       <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
-       <section id="captioned-gallery">
-           <figure class="slider">
-               <figure>
-                   <img src="hobbiton-lake.jpg" alt>
-                   <figcaption>Hobbiton, New Zealand</figcaption>
-               </figure>
-               <figure>
-                   <img src="wanaka-drowned-tree.jpg" alt>
-                   <figcaption>Wanaka, New Zealand</figcaption>
-               </figure>
-               <figure>
-                   <img src="utah-peak.jpg" alt>
-                   <figcaption>Utah, United States</figcaption>
-               </figure>
-               <figure>
-                   <img src="bryce-canyon-utah.jpg" alt>
-                   <figcaption>Bryce Canyon, Utah, United States</figcaption>
-               </figure>
-               <figure>
-                   <img src="hobbiton-lake.jpg" alt>
-                   <figcaption>Hobbiton, New Zealand</figcaption>
-               </figure>
-           </figure>
-       </section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="imagens/background-clean.jpg" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>...</h3>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="imagens/background-3.jpg" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>...</h3>
+            <p>...</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    
+    <!--   <section id="introducao">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-sm-12 text-center">
+            <p>Sermos referencia na transformação de comunidades gerando cidadãos protagonistas através de projetos sustentáveis e inovadores.</p>
+            <a href="#" class="btn btn-outline-primary">Conheça Nossos projetos</a>
+          </div>  
+        </div>
+      </div>
+    </section> -->
+    
+    <!--SEÇÃO SOBRE-->
+    <section id="sobre">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-12 historia">
+            <h2 class="titulo-secao text-center">A mensageiros</h2>
+            <p>Somos uma Associação Sem Fins Lucrativos, fundada em 1998 que nasceu com o intuito de entender como viviam as pessoas de comunidades vulneráveis, pois uma grande tragédia aconteceu: um menino cheio de sonhos chamado Tiago Souza Machado havia sido estupidamente assassinado, por outro adolescente da mesma idade.</p>
+            <p>Com uma vontade enorme de transformar esse tipo de cenário um grupo liderado por Verônica Machado, que era irmã de Tiago, cria a ONG Mensageiros da Esperança e assim começa uma trajetória de transformações e aprendizados...</p>
+            <p>Hoje, a ONG Mensageiros da Esperança há mais de 19 anos investe nos jovens, estimulando suas potencialidades através das atividades socioeducativas usando como principais ferramentas a educação, tecnologia, sustentabilidade e o empreendedorismo, fomentando o protagonismo juvenil e desde 2012 vem trabalhando com mulheres em vulnerabilidade social e/ou emocional, desenvolvendo competências empreendedoras para que através de seus talentos e habilidades, possam gerar renda, tornando-se protagonistas de suas vidas, pois acreditamos que uma mulher empoderada muda tudo ao seu redor.</p>
+            <p>Com as atividades desempenhadas já capacitamos mais de 13500 pessoas diretamente e mais de 60.000 indiretamente.</p>
+            <p>Nossa sede esta localizada na Lapa de Baixo, mas nasceu na Brasilandia onde tem seu maior foco de atuação, pois esse é um dos distritos mais violentos da cidade de São Paulo.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-12 text-center">
+            <h3>Missão</h3>
+            <p>Voltada para Serviços Sociais, utilizamos como ferramentas de educação e transformação: a arte, cultura, inclusão digital reciclagem e sustentabilidade.</p>
+          </div>
+        </div>
+        
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 text-center">
+            <h3 class="">Visão</h3>
+            <p>Ser referencia em capacitar e empoderar comunidades vulneráveis.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center">
+            <h3 class="">Valores</h3>
+            <p>Amor, resiliencia, confiança, esperança, colaboração, respeito e gratidão.</p>
+          </div>
+        </div>  
+      </div>
+      
+    </section>
+    
+    <!--SEÇÃO DOS NEGOCIOS DA ONG-->
+    <section id="negocios-sociais">
 
-   </header>
-   <!-- <hr> -->
-   <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="text-center titulo-secao">negocios sociais</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-sm-12 col-md-3">
+            <article class="negocios-article">
+              <div class="row justify-content-center">
+                <img class="img-fluid img-negocios img-padrao" src="imagens/logo_mde.png" alt="Logo: Espaço Zen">
+              </div>
+              <div>
+                <h3>Projetos Sociais</h3>
+                <p>
+                  Nossa metodologia apóia-se em princípios e técnicas emancipadoras, enfatizando o “aprender fazendo”, o que leva as pessoas a conscientizar-se e comprometer-se com ações planejadas de mudanças, visando o empoderamento.
+                  Trabalhamos de forma integral enfatizando o Pensar, o Sentir e o Querer!                    
+                </p>
+              </div>
+              <div class="alinhamento">
+                <a href="#" class="btn btn-outline-primary">Saiba mais</a>
+              </div>
+            </article>  negocios-article
+          </div> segunda coluna - nogócios sociais -->
+          
+          
+          <div class="col-sm-12 col-md-12">
+            <article class="negocios-article">
+              <div class="row justify-content-center">
+                <img class="img-fluid img-negocios img-padrao" src="imagens/logo-instituto.png" alt="Logo: Espaço Zen">
+              </div>
+              <div>
+                <h3>Cursos</h3>
+                <p>
+                  ONG Mensageiros da Esperança oferece diversos cursos e projetos de educação e sustentabilidade no empoderamento
+                  de jovens e mulheres. O Instituto é responsável pelas diversas capacitações que a ONG oferece, com valores bem acessíveis. Além disso, oferece diversas oficinas para empresas e outras ONG's.
+                </p>
+                <p>
+                  Inglês e Espanhol com foco em conversação e apoio de intercambistas de varias regiões do mundo Empreendedorismo e Educação Financeira/ Gastronomia Informática e novas tecnologias/ Beaba Digital para terceira idade Artesanato sustentável/ Oficinas de Criatividade para empresas Vivencias Gastronômicas em empresas/ Treinamentos motivacionais e palestras.
+                </p>
+              </div>
+              <div class="alinhamento">
+                <a href="cursos.html" class="btn btn-outline-primary">Saiba mais</a>
+              </div>
+            </article> <!-- negocios-article -->
+          </div> <!-- Primeira coluna - nogócios sociais -->
+        </div> <!-- fim da row -->
 
-   </main>
-   <footer>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <article class="negocios-article">
+              <div class="row justify-content-center">
+                <img class="img-fluid img-negocios img-padrao" src="imagens/logo-criar.jpg" alt="Logo: Espaço Zen">
+              </div>
+              <div>
+                <h3>Sustentável</h3>
+                <p>
+                  A CRIAR E CRIAR ART DESIGN é um Negócio Social que desenvolve produtos e serviços(decorações, cenografias, movéis,etc) a partir de materiais recicláveis, visando atender as necessidades de mercado, estimulando as práticas sustentáveis, coleta seletiva e cuidado com o meio ambiente, além de gerar impacto social, capacitando pessoas da base da pirâmide para geração de renda
+                </p>
+                <!-- <p>
+                  A Criar &#48 Criar visa atender as necessidades do mercado, estimulando as práticas sustentáveis e o cuidado com o meio ambiente, além de gerar impacto social e capacitar as pessoas da base da pirâmide para a geração de renda.
+                </p>   -->
+              </div>
+              <div class="alinhamento">
+                <a href="http://criarecriarartdesign.blogspot.com.br/" class="btn btn-outline-primary">Saiba Mais</a>
+              </div>
+            </article>  <!-- negocios-article -->
+          </div> <!-- segunda coluna - nogócios sociais -->
+          
+          <div class="col-sm-12 col-md-6">
+            <article class="negocios-article">
+              <div class="row justify-content-center">
+                <img class="img-fluid img-negocios img-padrao" src="imagens/logo-espaco-zen.PNG" alt="Logo: Espaço Zen">
+              </div>
+              <div>
+                <h3>Terapêutico</h3>
+                <p>
+                  Esse espaço é um Negócio Social Terapêutico da ONG Mensageiros da Esperança, que visa trabalhar terapias integrativas para o desenvolvimento humano.
+                </p>
+                <!-- <p>
+                  Nasceu com o intuito de integrar em um só ambiente, várias vertentes de terapias que trabalham com o corpo e a alma, trazendo equilíbro de forma salutar para os seus clientes e com valores acessíveis, possibilitanto o acesso a grande parte da população.
+                </p> -->
+              </div>
+              <div class="alinhamento">
+                <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+              </div>
+              
+            </article>  <!-- negocios-article -->
+          </div> <!-- teceira coluna - negócios sociais -->
+        </div>
 
-   </footer>
 
-   <script src="js/javascript.js"></script>    
+
+
+
+
+      </div> <!--container-->
+    </section> <!--NEGOCIOS DO SITE-->
+
+    <!-- SEÇÃO DE RESULTADOS DA ONG -->
+    <section id="resultados">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="text-center titulo-secao">Resultados</h2>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-3 text-center">
+            <p><i class="fa fa-graduation-cap fa-5x" aria-hidden="true"></i></p>
+            <h2>+10.000</h2>
+            <h3>Jovens Formandos</h3>
+          </div>
+          <div class="col-md-3 text-center">
+            <p><i class="fa fa-child fa-5x" aria-hidden="true"></i></p>
+            <h2>+1000</h2>
+            <h3>Jovens Contratados</h3>
+          </div>
+          <div class="col-md-3 text-center">
+            <p><i class="fa fa-female fa-5x" aria-hidden="true"></i></p>
+            <h2>+5000</h2>
+            <h3>Mulheres Impactadas</h3>
+          </div>
+          <div class="col-md-3 text-center">
+            <p><i class="fa fa-briefcase fa-5x" aria-hidden="true"></i></p>
+            <h2>+1000</h2>
+            <h3>Impacto Ambiental</h3>
+          </div>
+        </div>
+
+      </div>
+    </section> <!-- fim da seção de resultados -->
+
+
+    <!-- SEÇÃO DE PARCEIROS DA ONG -->
+    <section id="parceiros">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="text-center titulo-secao">Parceiros</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-sm-12 ">
+            <div class="parceiros-centro">
+              <img class="img-parceiros" src="imagens/cocacola.svg" alt="">
+              <img class="img-parceiros" src="imagens/senac.png" alt="">
+              <img class="img-parceiros" src="imagens/faculdade-campos-salles-ins-log-g.png" alt="" >
+              <img class="img-parceiros" src="imagens/correios.png" alt="">
+              <img class="img-parceiros" src="imagens/institutocacacolabrasil.png" alt="">
+              <img class="img-parceiros" src="imagens/coleticococacola.png" alt=""> 
+              <img class="img-parceiros" src="imagens/ciee.png" alt="">
+              <img class="img-parceiros" src="imagens/aiesec.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SEÇÃO DE DEPOIMENTOS DA ONG -->  
+    <!-- <section id="depoimentos">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 col-sm-12">
+            <h2 class="text-center titulo-secao">Histórias Transformadas</h2>
+            <p class="text-center">Depoimentos de alunos que conseguiram conquistar seus objetivos.</p>
+          </div>
+        </div>
+        
+        <div class="row">   
+          <div class="col-md-3 col-sm-12">
+            <img  src="imagens/esquilo.jpg" class="rounded-circle" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img  src="imagens/quokka.jpg" class="rounded-circle" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img  src="imagens/pato.jpg" class="rounded-circle" alt="">
+          </div>
+          <div class="col-md-3 col-sm-12">
+            <img  src="imagens/urso.jpg" class="rounded-circle" alt="">
+          </div>
+        </div>
+        
+        
+      </div>
+    </section> --> <!-- DEPOIMENTOS -->
+    
+  </main>
+  
+  <!--CONTATO-->
+  <footer id="contato">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-10">
+          <h2 class="titulo-secao">Entre em Contato com a Gente</h2>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-sm-12">
+          <p>
+            Rua Moxei, 96 - Lapa de Baixo (próxima a estação de trem da Lapa)
+          </p>
+          <p>
+            E-mail:cursos.ongme@gmail.com
+          </p>
+          <p>
+            Telefone: (11) 3578-7704 / Whatsapp Institucional: (11) 96583-0699
+          </p>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-sm-12">
+          <article>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-sm-1 col-md-4 col-lg-2">
+                  <div class="d-flex justify-content-between img-sociais">
+                    <a href="http://www.facebook.com" target="_blank" class="social facebook">
+                      <img src="imagens/facebook.png" alt="">
+                    </a>
+                    <a href="#" target="_blank" class="social twitter">
+                      <img src="imagens/twitter.png" alt="">           
+                    </a>
+                    <a href="#" target="_blank" class="social linkedin">
+                      <img src="imagens/linkedin.png" alt="">
+                    </a>
+                    <a href="mailto:anne@gmail.com" class="social email">
+                      <img src="imagens/email.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      
+      <div class="row d-flex justify-content-center">
+        <div class="col-sm-12 col-md-10">
+          <form class="form form-group">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <input class="campo campo-peq" type="text" name="nome" placeholder="Seu Nome*" required>
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <input class="campo campo-peq" type="email" name="email" placeholder="Seu Email*" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <textarea class="campo campo-gran" name="mensagem" placeholder="Tire suas duvidas*" required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline-primary">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+      
+    </div><!--container-->
+    
+  </footer><!-- FIM CONTATO-->
+  
+  <div class="scroll-top">
+    <a href=".header">Subir</a>
+  </div>
+  
+  
+  
+  <!-- links jquery, popper, bootstrap -->
+  <script src="js/jquery.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/js.js"></script>
+  
 </body>
 </html>
