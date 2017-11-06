@@ -17,12 +17,15 @@
 	width: 10%;
 }
 
-.img-depoimentos{
-	
+.img-espacozen{
+	width: 160px;
+	height: 160px;
 }
 
-
-
+.img-agenda{
+	width: 600px;
+	height: 700px;
+}
 
 @media (max-width: 576px) {
 	.img-padrao{
@@ -43,5 +46,10 @@
 	}
 	.img-sociais a{
 		padding: 15px;
+	}
+
+	.img-agenda{
+		width: 300px;
+		height: 400px;
 	}
 }

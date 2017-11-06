@@ -1,6 +1,7 @@
 /*BOTÕES DA INTRODUÇÃO*/
 #introducao .btn-outline-primary,
-#negocios-sociais .btn-outline-primary{
+#negocios-sociais .btn-outline-primary,
+#selecaoDoe .btn-outline-primary{
 	font-weight: bold;
 	font-family: 'titillium';
 	padding: 20px;
@@ -12,7 +13,8 @@
 }
 
 #introducao .btn-outline-primary:hover,
-#negocios-sociais .btn-outline-primary:hover{
+#negocios-sociais .btn-outline-primary,
+#selecaoDoe .btn-outline-primary:hover{
 	transition: .5s;
 	background-color: #c86a40;
 }
